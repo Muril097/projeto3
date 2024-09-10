@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Lilita+One&display=swap');
+
+.carousel-inner img {
+    max-width: 100vw;
+}
+
+.bolo img, .sorvetes img, .acai img {
+    max-width: 80vw;
+}
+
+body {
+    background-color: rgb(255, 145, 82);
+    font-family: "Lilita One", system-ui;
+}
+
+header h1 {
+    font-family: "Coiny", system-ui;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+body h3 {
+    margin-left: 10px;
+    margin-bottom: 25px;
+}
+
+header nav {
+    display: none;
+}
+
+.fcontainer ul li , .copy, h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.social img {
+    width: 25vw;
+    margin-top: 25px;
+}
+
+.card {
+    border-radius: 15px;
+    border: none;
+}
+
+.row {
+    margin-bottom: 15px;
+}
+
+@media screen and (min-width:641px) and (max-width:1023px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .container > .row {
+        margin: 3px;
+    }
+
+    .bolo img, .sorvetes img, .acai img {
+        max-width: 40vw;
+    }
+
+    .social img {
+        width: 12vw;
+        margin-top: 25px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .social {
+        display: flex;
+        justify-content: center;
+    }
+
+    .card {
+        border-radius: 15px;
+        border: none;
+        border: 0px;
+        width: 335px;
+        height: 535px;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+
+    header h1 {
+        font-size: 100px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 35%);
+    }
+
+    header nav {
+        display: flex;
+    }
+
+    .list-group-item {
+        background-color: rgb(255, 145, 82);
+        border: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 250px;
+        margin-right: 250px;
+    }
+
+    .list-group {
+        flex-direction: initial;
+    }
+
+    header li {
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+
+    .carousel-inner img{
+        width: 100vw;
+    }
+
+    .card {
+        border-radius: 15px;
+        border: none;
+        border: 0px;
+        width: 430px;
+        height: 700px;
+        margin-bottom: 15px;
+    }
+
+    .bolo img, .sorvetes img, .acai img {
+        max-width: 15vw;
+    }
+
+    .social img {
+        width: 5vw;
+        margin-top: 25px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .social {
+        display: flex;
+        justify-content: center;
+    }
+
+    .fcontainer {
+        display: flex;
+    }
+
+    .fcontainer ul {
+        width: 33vw;
+    }
+
+}
